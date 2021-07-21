@@ -5,10 +5,17 @@
     margin-right: 45px;
     padding: 7px;
     border-radius: 10px;
+    
     cursor: pointer;
+
+    @include mobile{
+        margin-top: 10px;
+        margin-right: 0px;
+    }
 
     &.active{
         background-color: $mainColor;
         color:white;
     }
+    
 }
