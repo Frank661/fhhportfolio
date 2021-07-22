@@ -26,9 +26,8 @@ export default function Intro() {
                     <h1> Frank Hernandez </h1>
                     <h3> A <span ref={textRef}> </span></h3>
                     <a href="#portfolio"> 
-                    <img src="assets/down.png"/>
-                
-                </a>
+                        <img src="assets/down.png"/>
+                    </a>
                 </div>
                
             </div>
