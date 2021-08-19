@@ -8,7 +8,7 @@ export default function Testimonials() {
             id: 1,
             name: "Eric Capiz",
             title: "Freelance Developer",
-            img: "https://media-exp1.licdn.com/dms/image/C5635AQFg6M33DQwn0A/profile-framedphoto-shrink_200_200/0/1617774822968?e=1626922800&v=beta&t=ipQ3ow6fXIm-wR7hWkXZDEVmlVGL3mVSgnRjNs9GddM",
+            img: "https://media-exp1.licdn.com/dms/image/D5635AQFb83iOUYhELw/profile-framedphoto-shrink_400_400/0/1627609240074?e=1629504000&v=beta&t=8OZL_tkVGfdV3LIOzRqxsQBEshRYUi3pAbRDEnuZLSQ",
             icon:"assets/linkedin.png",
             desc: "Frank is a great developer who is easy to work with and always has ideas to better a project, his knowledge with front end developement is 2nd to none. ",
             link: "https://www.linkedin.com/in/eric-capiz/"
