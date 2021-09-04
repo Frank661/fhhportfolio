@@ -3,7 +3,7 @@ import Intro from "./components/intro/Intro"
 import Topbar from "./components/topbar/Topbar"
 import Portfolio from "./components/portfolio/Portfolio"
 import Testimonials from "./components/testimonials/Testimonials"
-import Works from "./components/works/Works"
+import Skills from "./components/skills/Skills"
 import "./app.scss"
 import {useState} from "react"
 import Menu from "./components/menu/Menu"
@@ -18,7 +18,7 @@ function App() {
       <div className="sections"> 
         <Intro/>
         {/* <Portfolio/> */}
-        {/* <Works/> */}
+        <Skills/>
         <Testimonials/>
         <Contact/>
       </div>
