@@ -35,7 +35,8 @@
     cursor: pointer;
 
     @include mobile {
-        bottom: 55px;
+        // bottom: 55px;
+        padding-top: 50%;
     }
 
     &.left {
