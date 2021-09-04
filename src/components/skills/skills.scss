@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  
 
   .skills{
     display: flex;
@@ -65,6 +66,9 @@
       align-items: center;
       justify-content: center;
       
+      @include mobile {
+       padding-bottom: 25px;
+      }
 
       .item {
         width: 700px;
@@ -76,9 +80,10 @@
         justify-content: center;
         box-shadow: black 5px 5px 10px;
 
+
         @include mobile {
           width: 80%;
-          height: 350px;
+          height: 55%;
           margin: 15px 0;
         }
 
@@ -88,6 +93,9 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          @include mobile{
+            flex: 100%;
+          }
 
           .leftContainer {
             width: 90%;
@@ -95,6 +103,10 @@
             display: flex;
             flex-direction: column;
             // justify-content: space-between;
+            @include mobile{
+              align-items: center;
+              justify-content: center;
+            }
 
             .imgContainer {
               width: 40px;
@@ -106,8 +118,8 @@
               justify-content: center;
 
               @include mobile {
-                width: 20px;
-                height: 20px;
+                width: 25px;
+                height: 25px;
               }
 
               img {
@@ -122,7 +134,7 @@
               font-size: 20px;
 
               @include mobile{
-                font-size: 13px;
+                font-size: 16px;
               }
             }
             p {
@@ -150,10 +162,13 @@
           img {
             width: 400px;
             transform: rotate(-10deg);
-            
+            @include mobile{
+              display: none;
+            }
           }
         }
       }
     }
   }
+
 }
