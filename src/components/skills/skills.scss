@@ -20,6 +20,9 @@
    padding-top: 5px;
    list-style: none;
    padding-left: 10px;
+   @include mobile{
+     padding-top: 2.5px;
+   }
 
    img{
     vertical-align:middle
@@ -32,7 +35,7 @@
     cursor: pointer;
 
     @include mobile {
-        bottom: 5px;
+        bottom: 35px;
     }
 
     &.left {
@@ -54,9 +57,7 @@
     
 
     @include mobile {
-      height: 95%;
-      // flex-direction: column;
-      // justify-content: center;
+      height: 100%;
     }
 
     .container {
