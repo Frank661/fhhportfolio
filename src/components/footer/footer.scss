@@ -1,0 +1,12 @@
+@import "../../global.scss";
+.footer{
+    padding: 100px;
+    background-color: lightgray  ;
+    color: black;
+    text-align:center;
+    color: white;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.98)), url('https://images.unsplash.com/photo-1465799522714-8eb0e6fccf73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2026&q=80');
+    @include mobile{
+        padding: 10px;
+    }
+}
