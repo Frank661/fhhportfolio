@@ -10,7 +10,7 @@ export default function Contact() {
 
         e.preventDefault();
         setMessage(true)
-        emailjs.sendForm('service_shgpk42', 'template_cc4vurq', e.target, 'user_uhouzasBz0gcls4FRMhSk')
+        emailjs.sendForm('service_miw5sol', 'template_cc4vurq', e.target, 'user_uhouzasBz0gcls4FRMhSk')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -22,18 +22,24 @@ export default function Contact() {
 
     return (
         <div className="contact" id="contact">
-            <div className="left">
-                <img src="assets/shake.svg" alt="handshake icon"/>
-            </div>
-            <div className="right">
-                <h2> Contact.</h2>
-                <form onSubmit={handleSubmit}>
-                    <input type="text" placeholder="Email" name="email"/>
-                    <textarea placeholder="Hello my name is .... message" name="message"></textarea>
-                    <button type="submit"> Send </button>
-                    {message && <span> `Thanks, I will contact you ASAP :)` </span> }
-                </form>
-            </div>
+            <h2> Contact Us.</h2>
+            <h4>↓Fill out the form below↓</h4>
+            <br></br>
+
+            <form onSubmit={handleSubmit}>
+                <div className="form-inner-wrapper">
+                    <div className="input-wrapper">
+                        <input required type="text" placeholder="Full Name (required)" name="name"/>
+                        <input required type="tel" placeholder="Phone Number (required)" name="phone"/>
+                        <input required type="text" placeholder="Email (required)" name="email"/>
+                    </div>
+
+                    <textarea placeholder="Your message (required)" name="message"></textarea>
+                </div>
+
+                <button required type="submit"> Contact Now!  </button>
+            </form>
+                {message && <span> Your message has been sent, we will contact you soon. </span> }
         </div>
     )
 }
