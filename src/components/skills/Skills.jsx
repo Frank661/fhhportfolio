@@ -52,34 +52,70 @@ export default function Skills() {
     }
 
     return (
-        <div className="works"  id="skills">
-        
-          <div className="slider" 
-          style={{transform: `translateX(-${currentSlider * 100}vw)`}}>
-          
-              {data.map(d=>(
-              <div className="container">
-                  <div className="item">
-                      <div className="left">
-                          <div className="leftContainer">
-                              <div className="imgContainer">
-                                  <img src={d.icon} alt="mobile device icon"/>
-                              </div>
-                              <h2> {d.title} </h2>
-                              <p>
-                                {d.description}
-                              </p>
-                              {/* <span>Projects</span> */}
-                          </div>
-                      </div>
-                      <div className="right">
-                          <img src= {d.img}/>
-                      </div>
-                  </div>
-              </div>))}
-          </div>
-            <img src="assets/arrow.png" className="arrow left" alt="arrow icon" onClick={()=> handleClick("left") }/>
-            <img src="assets/arrow.png" className="arrow right" alt="arrow icon" onClick={()=> handleClick() }/>
-        </div>
+        <section className="wrapper" id="skills">
+            <h2 className="service-header"> Get A Developer That Gets You.  </h2>
+
+            <div className="top-holder">
+
+                <div className="content-holder-FED column">
+                    <img src="https://images.unsplash.com/photo-1553390774-b4822481c894?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2688&q=80" width={'600px'} height={'505px'}/>
+                </div>
+
+                <div className="content-holder-WD column">
+
+                    <div >
+                        <h3>Creative</h3>
+                        <h2>Web Developer & Designer</h2>
+                        <div style={{padding:"5px"}}></div>
+                        <p> As a great web developer and designer with a combination of technical skills and creativity we will create visually appealing, user-friendly, and functional websites and applications. </p>
+
+                        <a className="" href="#contact"> Schedule a Free Consultation Today! → </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div className="reverse-col top-holder ">
+                <div className="content-holder-WD ">
+                    <div >
+                        <h3>Sharp</h3>
+                        <h2>Backend Developer</h2>
+                        <div style={{padding:"5px"}}></div>
+                        <p> As a good back-end developer we work on the server-side of web development and are responsible for building and maintaining the server-side components of web applications. Whether it's an API or we are dealing with integrations having a knowledgable developer is the right choice.</p>
+
+                        <a className="" href="#contact"> Schedule a Free Consultation Today! → </a>
+
+                    </div>
+                </div>
+                <div className="content-holder-FED column">
+                    <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width={'800px'} height={'505px'}/>
+                </div>
+
+            </div>
+
+            <div className="top-holder">
+
+                <div className="content-holder-FED column">
+                    <img src="https://images.unsplash.com/photo-1577071835592-d5d55ffef660?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" width={'600px'} height={'505px'}/>
+                </div>
+
+                <div className="content-holder-WD column">
+
+                    <div >
+                        <h3>Resourceful</h3>
+                        <h2>SEO Specialist</h2>
+                        <div style={{padding:"5px"}}></div>
+                        <p> If you are looking to rank your website on that first page of Google then you need a good seo specialist on your team! As a Search Engine Optimizer I ensure your content is intentful and gets infront of your targeted audience. With aggressive strategies we help your website's visibility in search engine results pages (SERPS) improve.  </p>
+
+                        <a className="" href="#contact"> Schedule a Free Consultation Today! → </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
     );
 }
