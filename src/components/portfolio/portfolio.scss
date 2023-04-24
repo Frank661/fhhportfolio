@@ -1,98 +1,49 @@
 @import "../../global.scss";
 
-.portfolio{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.portfolio-wrapper{
+    padding: 100px 0px;
     
-
-    h1{
-        font-size: 50px;
-
-        @include mobile{
-            font-size: 20px;
-            margin-top: 10px;
-        }
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.98)), url('https://images.unsplash.com/photo-1465799522714-8eb0e6fccf73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2026&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    h2{
+        text-align: center;
+        font-size: 72px;
+        background: -webkit-linear-gradient(rgb(255, 255, 255), #d79bff , #2a009f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 400;
+        padding-bottom: 100px;
     }
-    ul{
-        margin: 10px;
-        padding: 0;
-        list-style: none;
+    .portfolio-inner{
         display: flex;
-    
-
-        @include mobile{
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 10px 0;
-           
-            
-        }
-
-  
-    }
-    .container{
-        width: 70%;
-        display: flex;
-        align-items: center;
+        flex-direction: row;
         justify-content: center;
-        flex-wrap: wrap;
-        
-        
+        // max-width: 1600px;
+        margin: auto;
 
-        @include mobile{
-            width: 100%;
-            flex-direction: column;
-            
-        }
-       
-        .item{
-            width: 220px;
-            height: 150px;
-            border-radius: 10px;
-            border: 1px solid lightgrey;
-            margin: 10px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            position: relative;
-            transition: all 1s ease;
-            cursor: pointer;
-
-            @include mobile{
-                width: 180px;
-                height: 110px;
-                
-            }
-
-            h3{
-                position: absolute;
-                font-size: 20px;
-                @include mobile{
-                  font-size: 17px; 
-                  font-weight: 300;
-                  
-                }
-
-            }
+        .portfolio-img{
+            width: 50vw;
+            // height: 500px;/assets/website designed by best webdevelper.png
+            max-height: 800px;
+            overflow-y: scroll;
             img{
                 width: 100%;
-                height: 100%;
-                object-fit: cover;
-                z-index: 1;
-                
-            }
-            &:hover{
-                background-color: $mainColor;
-                
-                img{
-                    opacity: 0.2;
-                    z-index: 0;
-                }
             }
         }
+        .portfolio-img::-webkit-scrollbar{
+            display: none;
+          }
+        .project-list{
+            color: white;
+            font-size: 52px;
+            li{
+                border-top: 2px solid white;
+                margin-bottom: 10px;
+            }
+        }
+
     }
 
 }
