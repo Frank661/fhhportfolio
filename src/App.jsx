@@ -19,7 +19,7 @@ function App() {
       <div className="sections"> 
         <Intro/>
         <Skills/>
-        {/* <Portfolio/> */}
+        <Portfolio/>
         {/* <Contact/> */}
         <Footer/>
       </div>
