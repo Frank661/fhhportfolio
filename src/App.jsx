@@ -20,10 +20,8 @@ function App() {
         <Intro/>
         <Skills/>
         <Portfolio/>
-        {/* <Contact/> */}
         <Footer/>
       </div>
-
     </div>
   );
 }
