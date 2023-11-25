@@ -102,7 +102,19 @@ export default function Portfolio() {
             serviceType: "Update • Maintenance",
             techStack: "PHP • JavaScript • HTML • CSS • Bootstrap "
         },
+        {
+            id: "Google Calendar",
+            title: "Google Calandar Clone",
+            image: "../assets/portfolio-images/google-calendar.png",
+            favicon: "../assets/portfolio-images/google-favicon.png",
+            description: "Desktop clone for Google calendar, allows a user to view current day and update the calendar with events. ",
+            date: "",
+            link: "https://blissful-gates-2380f5.netlify.app/",
+            serviceType: "Update • Maintenance",
+            techStack: "React • JavaScript • HTML • CSS "
+        },
     ]
+    const techUsed = ["React", "Javascript", "Node.js", "SCSS", "HTML", "CSS", "Figma", "Adobe XD", "Photoshop", "Bootstrap", "Redux", "Tailwind", "Material UI", "PHP", "MySQL", "GraphQL", "Wordpress", "jQuery", "Express", "GIT", "Rest API", "MongoDB", "RapidAPI", "Visual Studio Code"]
 
     useEffect(() => {
        switch (selected) {
@@ -137,12 +149,10 @@ export default function Portfolio() {
 
     return (
 
-        <section className="portfolio-wrapper">
-            <h2> Check out some of my past work: </h2>
+        <section className="portfolio-wrapper" id="portfolio">
+            <h2> Check out some of my past projects: </h2>
             <div className="portfolio-inner">
-                
                 <ul class="cards">
-                   
                     {list.map((item)=>(
                         <li>
                             <div class="card">
@@ -155,16 +165,23 @@ export default function Portfolio() {
                                         <h3 class="card__title">{item.title} <a target="_blank" href={item.link}><img width="12" src="../assets/icons/arrow-up-right-from-square-solid.svg"/></a></h3>            
                                         <span class="card__status">{item.serviceType}</span> <br></br>
                                         <span class="card__status">Technology used: {item.techStack}</span>
-
                                     </div>
                                     </div>
                                     <p class="card__description">{item.description} </p>
-                                    
                                 </div>
                             </div>      
                         </li>
                         ))}
-                    
+                </ul>
+            </div>
+
+            
+            <div class="tech-skills-section">
+                <h3>Here are a few technologies I have worked with:</h3>
+                <ul>
+                    {techUsed.map((item)=>(
+                        <li>{item}</li>
+                    ))}
                 </ul>
 
             </div>

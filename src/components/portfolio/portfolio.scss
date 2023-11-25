@@ -54,7 +54,7 @@
     padding: 0;
     list-style-type: none;
     flex-wrap: wrap;
-    max-width: 1600px;
+    max-width: 1500px;
     justify-content: center;
     gap: 2rem;
   }
@@ -135,8 +135,7 @@
   .card__thumb {
     flex-shrink: 0;
     width: 50px;
-    height: 50px;      
-    border-radius: 50%;      
+    height: 50px;           
   }
   
   .card__title {
@@ -156,7 +155,7 @@
   
   .card__status {
     font-size: .8em;
-    color: #D7BDCA;
+    color: #a79ea2;
   }
   
   .card__description {
@@ -169,3 +168,36 @@
     // -webkit-line-clamp: 3;
     // overflow: hidden;
   }    
+
+  .tech-skills-section{
+    max-width: 800px;
+    text-align: center;
+    padding: 2rem;
+    padding-top: 100px;
+    margin: auto;
+    h3{
+      color: white;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      
+    }
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-left:0;
+      li{
+        list-style-type: none;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        margin: 5px;
+        border-radius: 20px;
+        background-color: rgba(45, 212, 191, 0.1);
+        line-height: 1.25rem;
+        font-size: 0.9rem;
+        color: rgb(94, 234, 212);
+      }
+    }
+  }

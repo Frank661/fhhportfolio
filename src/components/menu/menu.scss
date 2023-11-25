@@ -14,6 +14,18 @@
     align-items: center;
     justify-content: center;
     transition: all 2s ease;
+    p{
+        font-size: 1.2rem;
+        width: 70%;
+        font-weight: lighter;
+    }
+    .social-menu{
+        width: 70%;
+        text-align: center;
+        display: flex;
+        gap: 2rem;
+        margin-top: 15px;
+    }
 
     &.active{
         right: 0;
