@@ -22,7 +22,7 @@ export default function Contact() {
 
     return (
         <div className="contact" id="contact">
-            <h2> Contact Us.</h2>
+            <h2>Let's get in touch</h2>
             <h4>↓Fill out the form below↓</h4>
             <br></br>
 
