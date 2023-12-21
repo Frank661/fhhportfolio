@@ -106,7 +106,7 @@ export default function Skills() {
                         <h3>Resourceful</h3>
                         <h2>SEO Specialist</h2>
                         <div style={{padding:"5px"}}></div>
-                        <p> If you are looking to rank your website on that first page of Google then you need a good seo specialist on your team! As a Search Engine Optimizer I ensure your content is intentful and gets infront of your targeted audience. With aggressive strategies we help your website's visibility in search engine results pages (SERPS) improve.  </p>
+                        <p> If you are looking to rank your website on that first page of Google then you need a good SEO (<a href="https://devtable.co/seo-search-engine-optimization/"> Search Engine Optimization</a>) specialist on your team! As a Search Engine Optimizer I ensure your content is intentful and gets infront of your targeted audience. With aggressive strategies we help your website's visibility in search engine results pages (SERPS) improve.  </p>
 
                         <a className="" href="#contact"> Schedule a Free Consultation Today! → </a>
 
