@@ -1,0 +1,68 @@
+@import "../../global.scss";
+
+.featuredPosts{
+  background-color: #14141e;
+  color: white;
+  padding: 100px 100px;
+  @include mobile{
+    padding: 100px 25px;
+  }
+  section{
+    max-width: 1000px;
+    margin: auto;
+    h2{
+      font-size: 1.1em;
+      font-weight: 500;
+    }
+
+    .about-article{
+      display: flex;
+      flex-direction: row;
+      gap: 25px;
+      border-bottom: 1px solid #438eff25;
+      padding-bottom: 5%;
+      padding-top: 5%;
+      @include mobile{
+        flex-wrap: wrap;
+      }
+      h2{ 
+        margin-bottom: 2%;
+
+        a{
+          margin-bottom: 2%;
+          font-size: 1.4em;
+          color: rgb(94, 180, 234);
+          font-weight: 500;
+        }
+        
+      }
+      p{
+        margin-bottom: 2%;
+        font-weight: 300;
+      }
+      a{
+        font-size: 16px;
+        font-weight: 200;
+        color: rgb(94, 180, 234);
+        text-decoration: none;
+      }
+      img{
+        max-width: 250px;
+        border-radius: 8px;
+        @include mobile{
+          max-width: 100%;
+        }
+      }
+      div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      
+     
+    }
+    .about-article:last-of-type{
+      border-bottom: none;
+    }
+  }
+}

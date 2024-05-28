@@ -2,31 +2,31 @@
 
 .topbar{
     width: 100%;
-    height: 70px;
-    background-color: white;
-    color: black;
+    height: 60px;
+    background-color: #201f2f;
     position: fixed;
     top: 0;
     z-index:3;
     transition: all 1s ease;
-    box-shadow: 0 4px 2px -2px gray;
-
-
 
     .wrapper{
-        padding: 10px 30px;
+        max-width: 1150px;
+        margin: auto;
+        padding: 0px 30px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        align-content: center;
+        height: 100%;
     
         .left{
             display: flex;
             align-items: center;
             .logo{
-                font-size: 40px;
+                font-size: 20px;
                 font-weight: 700;
                 text-decoration: none;
-                color: #380eae;
+                color: #ffffff;
                 margin-right: 30px;
             }
             .itemcontainer{
@@ -50,6 +50,8 @@
         }
         .right{
             .hamburger{
+                background-color: #201f2f;
+                color: white;
                 width:32px;
                 height: 25px;
                 display: flex;
@@ -59,7 +61,7 @@
                 span{
                     width: 100%;
                     height: 3px;
-                    background-color: black;
+                    background-color: rgb(255, 255, 255);
                     transform-origin: left;
                     transition: all 2s ease;
     
@@ -68,7 +70,7 @@
         }
     }
     &.active{
-        // background-color: black;
+        // background-color: #201f2f;
         // color: white;
         // border-bottom: 10px solid white;
         .hamburger{

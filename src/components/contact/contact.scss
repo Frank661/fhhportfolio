@@ -3,27 +3,49 @@
 
 
 .contact{
-  // display: flex;
   padding: 5%;  
-  // background: url('https://images.unsplash.com/photo-1618556450991-2f1af64e8191?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80');
-  background-position: center;
-  background-size: cover;
   @include mobile{
     padding: 0px;
     padding-bottom: 100px;
   }
   h2{
-    font-size: 54px;
+    font-size: 50px;
     color: white;
+    margin-bottom: 2%;
   }
   h4{
     font-size: 20px;
     color: #808080;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
   }
 
   h2, h4 {
     text-align: center;
+  }
+  .contact-p{
+    max-width: 450px;
+    margin: auto;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .btn-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 25px;
+    margin-bottom: 50px;
+    a{
+      color: white;
+      background-color: #438fff;
+      padding: 10px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 300;
+      font-size: 16px;
+    }
   }
 
   form{
@@ -35,10 +57,9 @@
       justify-content: center;
       gap: 20px;
       padding-bottom: 45px;
-      @include mobile{
-        flex-direction: column;
-        
-      }
+      flex-direction: column;
+      margin: auto;
+      max-width: 600px;
         .input-wrapper{
         display: flex;
         justify-content: center;

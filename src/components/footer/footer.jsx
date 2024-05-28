@@ -9,7 +9,7 @@ export default function Footer() {
 
 
     return(
-        <footer className="footer"> 
+        <footer className="footer" id="footer"> 
            <Contact/>
             <p> Copyright © DevFrank </p>
         </footer>

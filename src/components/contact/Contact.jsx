@@ -23,9 +23,13 @@ export default function Contact() {
     return (
         <div className="contact" id="contact">
             <h2>Let's get in touch</h2>
-            <h4>↓Fill out the form below↓</h4>
+            <p className="contact-p"> To get in touch, you can connect and message me on LinkedIn. For serious inquiries, please email me or fill out the form below.</p>
+            <div className="btn-holder">
+                <a href="https://www.linkedin.com/in/devfrank/" target="_blank">LinkedIn</a>
+                <a href="mailto:francisco.jhernandez@icloud.com">E-mail</a>
+            </div>
             <br></br>
-
+            <h4>↓Or fill out the form below↓</h4>
             <form onSubmit={handleSubmit}>
                 <div className="form-inner-wrapper">
                     <div className="input-wrapper">

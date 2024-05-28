@@ -1,121 +1,121 @@
-import "./skills.scss"
-import {useState} from 'react'
+import "./skills.scss";
+import { useState, useEffect } from "react";
 
 export default function Skills() {
-    
-    const [currentSlider, setCurrentSlider] = useState(0);
+  const [activeTab, setActiveTab] = useState("");
+
+  useEffect(() => {
+    // Set the default active tab when component mounts
+    document.getElementById("defaultOpen").click();
+  }, []);
+
+  useEffect(() => {
+    // Set the default active tab when component mounts
+    document.getElementById("defaultOpen").click();
+  }, []);
+
+  const featureModel = (evt, model) => {
+    const tabcontents = document.getElementsByClassName("tabcontent");
+    for (let i = 0; i < tabcontents.length; i++) {
+      tabcontents[i].style.maxHeight = "0";
+      tabcontents[i].style.opacity = "0";
+      tabcontents[i].style.zIndex = "-1";
+      tabcontents[i].style.position = "absolute";
 
 
-    const data = [
-        {
-            id: 1,
-            title: "Front End Technologies",
-            icon: "assets/mobile.png",
-            img: "https://images.unsplash.com/photo-1536148935331-408321065b18?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=333&q=80",
-            description: 
-            <div className="skills"> 
-            
-                <li><img src="assets/javascript.png" width="25" height="25" ></img> JavaScript</li>
-                <li><img src="assets/python.png" width="25" height="25" ></img>Python</li>
-                <li><img src="assets/react.png" width="25" height="25" ></img>React.js</li>
-                <li> <img src="assets/redux.png" width="25" height="25" ></img>Redux</li>
-                <li><img src="assets/css-3.png" width="25" height="25" ></img>CSS</li> 
-                <li> <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="25" height="25" alt="HTML5 Powered" title="HTML5 Powered"></img> HTML5</li>
-            </div>
-        },
-        {
-            id: 2,
-            title: "Backend Technologies",
-            icon: "assets/globe.png",
-            img: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=250&q=100",
-            description: 
-            <div className="skills">  
-                <li><img src="assets/nodejs.png" width="65" height="30" ></img></li>
-                <li><img src="assets/graphql.png" width="30" height="30" ></img>GraphQl</li>
-                <li><img src="assets/sql-server.png" width="35" height="30" ></img>SQL</li>
-                <li><img src="assets/mongodb.png" width="75" height="30" ></img></li>     
-            </div>
-        },
-        {
-            id: 3,
-            title: "Technologies",
-            icon: "assets/globe.png",
-            img: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=250&q=100",
 
-            description: <p style={{fontWeight:"600", paddingTop:"25px"}}> Hey there, I am a full stack developer who can work on front and back end development. My knowledge does not only end on the items I have listed, in this world of neverending change I am constantly learning new frameworks and working with new technologies all the time. So just because it's not listed does not mean I can not work with it. Reach out and let's work together on bringing the future to us. </p>
-        }
-    ]
-
-    const handleClick = (way) => {
-        way === "left" ? setCurrentSlider(currentSlider > 0 ? currentSlider - 1 : 2) : 
-        setCurrentSlider(currentSlider < data.length - 1 ?currentSlider+1 : 0) 
+    //   tabcontents[i].style.maxHeight = "0";
     }
+    const tablinks = document.getElementsByClassName("tablinks");
+    for (let i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    const selectedModel = document.getElementById(model);
+    selectedModel.style.opacity = "1";
+    selectedModel.style.maxHeight = "1000px";
+    selectedModel.style.position = "relative";
+    selectedModel.style.zIndex = "1";
 
-    return (
-        <section className="wrapper" id="skills">
-            <h2 className="service-header"> Get A Developer That Gets You.  </h2>
+    evt.currentTarget.className += " active";
+    setActiveTab(model);
+  };
 
-            <div className="top-holder">
+  const feSkills = [
+    { name: 'JavaScript', logo: '../assets/javascript-developer.svg' },
+    { name: 'React', logo: '../assets/react-developer.svg' },
+    { name: 'CSS', logo: '../assets/css-3.png' },
+    { name: 'HTML', logo: '../assets/html-5-developer.png' },
+    { name: 'Bootstrap', logo: '../assets/bootstrap-5-developer.svg' },
+    { name: 'Tailwindcss', logo: '../assets/tailwindcss-developer.png' },
+    { name: 'SASS', logo: '../assets/sass-developer.png' }
+  ];
+  const beSkills = [
+    { name: 'Node.js', logo: '../assets/node-js-developer.svg' },
+    { name: 'Express.js', logo: '../assets/express-developer.svg' },
+    { name: 'PHP', logo: '../assets/php-developer.png' },
+    { name: 'SQL', logo: '../assets/sql-server.png' },
+    { name: 'MongoDB', logo: '../assets/mongodb-developer.png' },
+  ];
+  const tools = [
+    { name: 'Git', logo: '../assets/git.png' },
+    { name: 'GitHub', logo: '../assets/github-com.svg' },
+    { name: 'Adobe', logo: '../assets/adobe.svg' },
+    { name: 'Figma', logo: '../assets/figma.png' },
+    { name: 'Postman', logo: '../assets/postman.png' },
+    { name: 'WordPress', logo: '../assets/wordpress-developer.png' },
+    { name: 'Zapier', logo: '../assets/zapier.png' },
+    { name: 'Salesforce', logo: '../assets/salesforce.png' },
+    { name: '', logo: '../assets/ahrefs.png' },
+    { name: 'SemRush', logo: '../assets/semrush.png' },
+    { name: 'Visual Studio Code', logo: '../assets/vsc.png' },
+    { name: 'Google Analytics', logo: '../assets/google-analytics.png' }
+  ];
 
-                <div className="content-holder-FED column">
-                    <img src="https://images.unsplash.com/photo-1553390774-b4822481c894?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2688&q=80" width={'600px'} height={'505px'}/>
-                </div>
-
-                <div className="content-holder-WD column">
-
-                    <div >
-                        <h3>Creative</h3>
-                        <h2>Web Developer & Designer</h2>
-                        <div style={{padding:"5px"}}></div>
-                        <p> As a great web developer and designer with a combination of technical skills and creativity we will create visually appealing, user-friendly, and functional websites and applications. </p>
-
-                        <a className="" href="#contact"> Schedule a Free Consultation Today! → </a>
-
-                    </div>
-                </div>
-
+  return (
+    <section className="skills" id="skills">
+        <div className="wrapper">
+            <h2>Skills</h2>
+            <div className="btn-holder">
+                <button id="defaultOpen" className="tablinks" onClick={(e) => featureModel(e, "model1")}>
+                {" "} Front end {" "}</button>
+                <button className="tablinks" onClick={(e) => featureModel(e, "model2")}>
+                {" "} Back end </button>
+                <button className="tablinks" onClick={(e) => featureModel(e, "model3")}>
+                {" "} Tools </button>
             </div>
-
-            <div className="reverse-col top-holder ">
-                <div className="content-holder-WD ">
-                    <div >
-                        <h3>Sharp</h3>
-                        <h2>Backend Developer</h2>
-                        <div style={{padding:"5px"}}></div>
-                        <p> As a good back-end developer we work on the server-side of web development and are responsible for building and maintaining the server-side components of web applications. Whether it's an API or we are dealing with integrations having a knowledgable developer is the right choice.</p>
-
-                        <a className="" href="#contact"> Schedule a Free Consultation Today! → </a>
-
+            <div className="modalWrapper">
+                <div id="model1" className="tabcontent">
+                {feSkills.map((skill, index) => (
+                    <div className="items" key={index}>
+                    <p>
+                        <img src={skill.logo} alt={`${skill.name} logo`} width={20} height={20} /> {skill.name}
+                    </p>
                     </div>
-                </div>
-                <div className="content-holder-FED column">
-                    <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width={'800px'} height={'505px'}/>
+                ))}
                 </div>
 
-            </div>
-
-            <div className="top-holder">
-
-                <div className="content-holder-FED column">
-                    <img src="https://images.unsplash.com/photo-1577071835592-d5d55ffef660?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" width={'600px'} height={'505px'}/>
-                </div>
-
-                <div className="content-holder-WD column">
-
-                    <div >
-                        <h3>Resourceful</h3>
-                        <h2>SEO Specialist</h2>
-                        <div style={{padding:"5px"}}></div>
-                        <p> If you are looking to rank your website on that first page of Google then you need a good SEO (<a href="https://devtable.co/seo-search-engine-optimization/"> Search Engine Optimization</a>) specialist on your team! As a Search Engine Optimizer I ensure your content is intentful and gets infront of your targeted audience. With aggressive strategies we help your website's visibility in search engine results pages (SERPS) improve.  </p>
-
-                        <a className="" href="#contact"> Schedule a Free Consultation Today! → </a>
-
+                <div id="model2" className="tabcontent">
+                {beSkills.map((skill, index) => (
+                    <div className="items" key={index}>
+                    <p>
+                        <img src={skill.logo} alt={`${skill.name} logo`} width={20} height={20} /> {skill.name}
+                    </p>
                     </div>
+                ))}
                 </div>
 
+                <div id="model3" className="tabcontent">
+                {tools.map((skill, index) => (
+                    <div className="items" key={index}>
+                    <p>
+                        <img src={skill.logo} alt={`${skill.name} logo`} width={20} height={20} /> {skill.name}
+                    </p>
+                    </div>
+                ))}
+                </div>
             </div>
+        </div>
 
-
-        </section>
-    );
+    </section>
+  );
 }
