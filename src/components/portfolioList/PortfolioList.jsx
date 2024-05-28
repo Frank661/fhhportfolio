@@ -234,18 +234,19 @@ export default function Portfolio2() {
         <div className="slide">
           <div className="slide-content">
             <img
+              loading="lazy"
               className="slide-image"
               src={portfolioItems[itemCount - 1].image}
               alt={portfolioItems[itemCount - 1].title}
             />
             <div className="slide-overlay">
-              <h3> <img className="card_thumb"  src={portfolioItems[itemCount - 1].favicon}/> {portfolioItems[itemCount - 1].title}<a
+              <h3> <img loading="lazy" className="card_thumb"  src={portfolioItems[itemCount - 1].favicon}/> {portfolioItems[itemCount - 1].title}<a
                 href={portfolioItems[itemCount - 1].link}
                 target="_blank"
                 rel="noopener noreferrer"
                 title="click to visit site"
               >
-                <img className="site-link" width={15} src="../assets/icons/arrow-up-right-from-square-solid.svg"/>
+                <img loading="lazy" className="site-link" width={15} src="../assets/icons/arrow-up-right-from-square-solid.svg"/>
               </a></h3>
               <p>{portfolioItems[itemCount - 1].serviceType}</p>
               
@@ -259,15 +260,15 @@ export default function Portfolio2() {
           >
             <div className="slide-content">
             <div className="info-icon" onClick={toggleDescription}>
-              <img src="../assets/icons/info-icon.svg" alt="Info Icon" />
+              <img loading="lazy" src="../assets/icons/info-icon.svg" alt="Info Icon" />
               <div className="description">
                 <p>{item.description}</p>
               </div>
             </div>
-              <img className="slide-image" src={item.image} alt={item.title} />
+              <img loading="lazy" className="slide-image" src={item.image} alt={item.title} />
               <div className="slide-overlay">
-                <h3> <img className="card_thumb" src={item.favicon} alt={item.title + " icon"} /> {item.title} <a href={item.link} target="_blank" rel="noopener noreferrer" title="click to visit site">
-                  <img className="site-link" width={15} src="../assets/icons/arrow-up-right-from-square-solid.svg"/>
+                <h3> <img loading="lazy" className="card_thumb" src={item.favicon} alt={item.title + " icon"} /> {item.title} <a href={item.link} target="_blank" rel="noopener noreferrer" title="click to visit site">
+                  <img loading="lazy" className="site-link" width={15} src="../assets/icons/arrow-up-right-from-square-solid.svg"/>
                 </a></h3>
                 <p>{item.serviceType}</p>
                 
@@ -281,15 +282,16 @@ export default function Portfolio2() {
               className="slide-image"
               src={portfolioItems[0].image}
               alt={portfolioItems[0].title}
+              loading="lazy"
             />
             <div className="slide-overlay">
-              <h3><img className="card_thumb" src={portfolioItems[0].favicon} /> {portfolioItems[0].title} <a
+              <h3><img loading="lazy" className="card_thumb" src={portfolioItems[0].favicon} /> {portfolioItems[0].title} <a
                 href={portfolioItems[0].link}
                 target="_blank"
                 rel="noopener noreferrer"
                 title="click to visit site"
               >
-                <img className="site-link" width={15} src="../assets/icons/arrow-up-right-from-square-solid.svg"/>
+                <img loading="lazy" className="site-link" width={15} src="../assets/icons/arrow-up-right-from-square-solid.svg"/>
               </a></h3>
               <p>{portfolioItems[0].serviceType}</p>
               
@@ -303,10 +305,12 @@ export default function Portfolio2() {
             width={55}
             src="../assets/icons/left-icon-arrow.png"
             alt="Previous"
+            loading="lazy"
           />
         </button>
         <button className="slider-btn next" onClick={handleNextSlide}>
           <img
+            loading="lazy"
             width={55}
             src="../assets/icons/right-arrow-icon.png"
             alt="Next"

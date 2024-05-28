@@ -21,9 +21,8 @@ export default function Intro() {
                         <h2> Hi, I am Frank,</h2>
                         <h1 className=""><span ref={textRef}> </span></h1>
                         <br></br>
-                        <p> I am an experiened full stack developer who has worked with top brands. Creating memorable user experiences and designing top converting webstie and applications </p>
+                        <p> I am an experiened full stack developer who has worked with top brands. Creating memorable user experiences and designing top converting websites and applications. With over 7 years of experience I am able to design and develop large scale websites and fully functional web applications.</p>
 
-                        {/* <a className="orange-cta" href="#contact"> Contact Me Now! </a> */}
 
                         <br></br>
                         <h3>Follow me</h3>

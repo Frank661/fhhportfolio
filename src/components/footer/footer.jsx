@@ -3,8 +3,6 @@ import Contact from "../contact/Contact"
 import "./footer.scss"
 import { useEffect, useRef } from "react"
 
-
-
 export default function Footer() {
 
 

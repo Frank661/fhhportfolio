@@ -8,7 +8,7 @@ const FeaturedPosts = () => {
         <h2>Featured Articles</h2>
         <div className="about-article">
           <div className="img-holder"> 
-             <img width={400} src="https://mlqu8p9ym7uk.i.optimole.com/w:1280/h:720/q:mauto/ig:avif/https://devtable.co/wp-content/uploads/2024/05/top-wordpress-plugins-for-your-website.png"/>
+             <img loading="lazy" width={400} src="https://mlqu8p9ym7uk.i.optimole.com/w:1280/h:720/q:mauto/ig:avif/https://devtable.co/wp-content/uploads/2024/05/top-wordpress-plugins-for-your-website.png"/>
           </div>
          
           <div>
@@ -18,7 +18,7 @@ const FeaturedPosts = () => {
           </div>
         </div>
         <div className="about-article">
-          <img width={400} src="https://mlqu8p9ym7uk.i.optimole.com/w:1400/h:840/q:mauto/ig:avif/https://devtable.co/wp-content/uploads/2024/02/lp-examples.jpg"/>
+          <img loading="lazy" width={400} src="https://mlqu8p9ym7uk.i.optimole.com/w:1400/h:840/q:mauto/ig:avif/https://devtable.co/wp-content/uploads/2024/02/lp-examples.jpg"/>
           <div>
             <h2><a href="https://devtable.co/best-landing-pages-funnels/">15 Tips to High Converting Landing Pages for your Campaigns</a></h2>
             <p>Where first impressions matter the most, the design and functionality of landing pages play a pivotal role in converting visitors into customers and leads!</p>
@@ -26,7 +26,7 @@ const FeaturedPosts = () => {
           </div>
         </div>
         <div className="about-article">
-          <img width={400} src="https://mlqu8p9ym7uk.i.optimole.com/w:1536/h:1024/q:mauto/ig:avif/https://devtable.co/wp-content/uploads/2023/12/ai-seo.jpg"/>
+          <img loading="lazy" width={400} src="https://mlqu8p9ym7uk.i.optimole.com/w:1536/h:1024/q:mauto/ig:avif/https://devtable.co/wp-content/uploads/2023/12/ai-seo.jpg"/>
           <div>
             <h2><a href="https://devtable.co/ai-powered-seo/">AI-Powered SEO in 2024: Strategies for Success</a></h2>
             <p>AI's role in SEO extends beyond mere automation; it offers actionable insights and predictive analytics that traditional methods struggle to provide. As we navigate 2024, integrating AI into your SEO strategy is not just an option; it's a strategic imperative.</p>
