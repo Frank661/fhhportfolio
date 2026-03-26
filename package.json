@@ -1,43 +1,28 @@
 {
-  "name": "frankdev",
+  "name": "fhhportfolio-next",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.12.1",
-    "@material-ui/icons": "^4.11.2",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "emailjs-com": "^3.2.0",
-    "ityped": "^1.0.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "sass": "^1.50.0",
-    "web-vitals": "^1.0.1"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "framer-motion": "^12.38.0",
+    "next": "16.2.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
